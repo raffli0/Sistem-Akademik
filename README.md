@@ -195,65 +195,51 @@ routes/
 └── web.php
 ```
 
-## Routes & Middleware
+## Gallery
 
-### Public Routes
-- `GET /` - Welcome page
-- `POST /login` - Authentication (via auth routes)
+### Login Page
 
-### Protected Routes (Require Login)
-```
-Prefix: /dashboard
-- GET /dashboard - Dashboard
+![alt text](image-1.png)
 
-Prefix: /jurusan
-- GET /jurusan - Index
-- GET /jurusan/create - Create form
-- POST /jurusan - Store
-- GET /jurusan/{id}/edit - Edit form
-- PUT /jurusan/{id} - Update
-- DELETE /jurusan/{id} - Delete
+### Dashboard Page
 
-Prefix: /mahasiswa
-- GET /mahasiswa - Index
-- GET /mahasiswa/create - Create form
-- POST /mahasiswa - Store
-- GET /mahasiswa/{id}/edit - Edit form
-- PUT /mahasiswa/{id} - Update
-- DELETE /mahasiswa/{id} - Delete
+![alt text](image-2.png)
 
-Prefix: /matakuliah
-- GET /matakuliah - Index
-- GET /matakuliah/create - Create form
-- POST /matakuliah - Store
-- GET /matakuliah/{id}/edit - Edit form
-- PUT /matakuliah/{id} - Update
-- DELETE /matakuliah/{id} - Delete
-```
+### Jurusan Page
 
-### Error: Database connection failed
-- Pastikan MySQL sudah running
-- Cek konfigurasi DB di file `.env`
-- Pastikan database sudah di-create
+![alt text](image-3.png)
 
-### Error: Table not found
-- Jalankan: `php artisan migrate:fresh --seed`
+### Jurusan Create Page
 
-### Error: Class not found
-- Jalankan: `composer dump-autoload`
+![alt text](image-4.png)
 
-## Catatan Teknis
+### Jurusan Edit Page
 
-### Eloquent Relationships
-Semua model sudah menggunakan Eloquent relationships:
-- Model `Jurusan` memiliki relationship `hasMany` ke `Mahasiswa` dan `Matakuliah`
-- Model `Mahasiswa` memiliki relationship `belongsTo` ke `Jurusan`
-- Model `Matakuliah` memiliki relationship `belongsTo` ke `Jurusan`
+![alt text](image-5.png)
 
-### Mass Assignment
-Semua model menggunakan `protected $fillable` untuk mass assignment protection.
+### Mahasiswa Page
 
-### Pagination
-Semua index pages menggunakan `paginate(10)` untuk membatasi 10 record per halaman.
+![alt text](image-6.png)
+
+### Mahasiswa Create Page
+
+![alt text](image-7.png)
+
+### Mahasiswa Edit Page
+
+![alt text](image-8.png)
+
+### Matakuliah Page
+
+![alt text](image-9.png)
+
+### Matakuliah Create Page
+
+![alt text](image-10.png)
+
+### Matakuliah Edit Page
+
+![alt text](image-11.png)
+
 
 
