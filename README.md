@@ -97,8 +97,8 @@ updated_at
 
 1. **Clone Repository**
 ```bash
-git clone <repository-url>
-cd test
+git clone https://github.com/raffli0/Sistem-Akademik.git
+cd Sistem-Akademik
 ```
 
 2. **Install Dependencies**
