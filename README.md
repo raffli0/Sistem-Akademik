@@ -242,9 +242,6 @@ Prefix: /matakuliah
 ### Error: Class not found
 - Jalankan: `composer dump-autoload`
 
-### Error: Permission denied
-- Pastikan folder `storage` dan `bootstrap/cache` writable
-
 ## Catatan Teknis
 
 ### Eloquent Relationships
@@ -258,11 +255,5 @@ Semua model menggunakan `protected $fillable` untuk mass assignment protection.
 
 ### Pagination
 Semua index pages menggunakan `paginate(10)` untuk membatasi 10 record per halaman.
-
-### CSRF Protection
-Semua form menggunakan `@csrf` untuk CSRF token protection.
-
-### Form Method Spoofing
-Menggunakan `@method('PUT')` dan `@method('DELETE')` untuk HTTP method spoofing.
 
 
