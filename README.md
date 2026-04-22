@@ -159,7 +159,6 @@ app/
 │   ├── Mahasiswa.php
 │   ├── Matakuliah.php
 │   └── User.php
-└── Providers/
 
 database/
 ├── migrations/
@@ -174,9 +173,11 @@ database/
 
 resources/
 └── views/
+    ├── dashboard.blade.php
     ├── layouts/
     │   └── app.blade.php
-    ├── dashboard.blade.php
+    ├── auth/
+    │   └── login.blade.php
     ├── jurusan/
     │   ├── index.blade.php
     │   ├── create.blade.php
@@ -264,13 +265,4 @@ Semua form menggunakan `@csrf` untuk CSRF token protection.
 ### Form Method Spoofing
 Menggunakan `@method('PUT')` dan `@method('DELETE')` untuk HTTP method spoofing.
 
-## Fitur Bonus (Sudah Diimplementasikan)
-
-✅ Validasi form menggunakan Laravel Validation
-✅ Seeder untuk dummy data
-✅ Pagination untuk semua index pages
-✅ UI menggunakan Bootstrap 5.3
-✅ Alert messages (success/error)
-✅ Relasi Eloquent yang lengkap
-✅ Middleware auth untuk semua route protected
 
