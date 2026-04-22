@@ -141,7 +141,7 @@ php artisan serve
 
 8. **Akses Aplikasi**
 - URL: `http://localhost:8000`
-- Email: `test@example.com`
+- Email: `admin@gmail.com`
 - Password: `password`
 
 ## File Structure
