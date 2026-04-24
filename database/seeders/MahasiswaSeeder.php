@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use App\Models\Mahasiswa;
-use Faker\Factory as Faker; // Pastikan baris ini tepat seperti ini
+use Faker\Factory as Faker;
 
 class MahasiswaSeeder extends Seeder
 {
